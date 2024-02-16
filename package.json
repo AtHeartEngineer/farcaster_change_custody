@@ -1,0 +1,19 @@
+{
+  "name": "farcaster_change_custody",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "http-server ./dist"
+  },
+  "author": "atheartengineer",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.7.9"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.3.3"
+  }
+}
