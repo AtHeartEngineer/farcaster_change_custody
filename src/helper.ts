@@ -1,5 +1,5 @@
-import { ID_REGISTRY_ADDRESS, idRegistryABI } from '@farcaster/hub-web';
-import { publicClient, account } from './clients.ts';
+import { ID_REGISTRY_ADDRESS, idRegistryABI } from '@farcaster/core';
+import { publicClient, account } from './clients';
 
 export const getDeadline = () => {
   const now = Math.floor(Date.now() / 1000);

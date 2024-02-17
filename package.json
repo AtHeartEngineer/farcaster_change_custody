@@ -10,6 +10,7 @@
   "author": "atheartengineer",
   "license": "MIT",
   "dependencies": {
+    "@farcaster/core": "^0.14.0",
     "viem": "^2.7.9"
   },
   "devDependencies": {
