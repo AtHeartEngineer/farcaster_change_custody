@@ -4,6 +4,12 @@ import { walletClient, publicClient, getAccountAddress } from './client';
 import { idContract } from './contract';
 import { readNonce, getDeadline } from './helper';
 
+/**
+ * Transfers Farcaster account to a new owner.
+ *
+ * @param fid ID of farcaster account
+ * @param to Account address to trasnfer ownership to
+ */
 export const transferAccount = async (fid: bigint, to: Address) => {
   // TODO fix 'any' typing, signer constrcutor expeting wallet client with netowrk prop.
   const eip712Signer = new ViemWalletEip712Signer(walletClient as any);
