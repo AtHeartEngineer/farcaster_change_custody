@@ -1,5 +1,4 @@
 import { createWalletClient, createPublicClient, custom, http } from 'viem';
-import { privateKeyToAccount } from 'viem/accounts';
 import { optimism } from 'viem/chains';
 
 export const publicClient = createPublicClient({
@@ -12,8 +11,8 @@ export const walletClient = createWalletClient({
   transport: custom(window.ethereum)
 });
 
-// JSON-RPC Account
-//export const [account] = await walletClient.getAddresses();
+export const getAccountAddress = async () => {
+  const [firstAddress] = await walletClient.getAddresses();
+  return firstAddress;
+};
 
-// Local Account
-export const account = privateKeyToAccount('0x...');

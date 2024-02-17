@@ -1,0 +1,19 @@
+name: main
+
+on:
+  push:
+
+jobs:
+  build:
+    name: Build project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.x"
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run build

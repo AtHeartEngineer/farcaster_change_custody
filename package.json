@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@farcaster/core": "^0.14.0",
-    "viem": "^2.7.9"
+    "viem": "^2.7.10"
   },
   "devDependencies": {
     "http-server": "^14.1.1",
